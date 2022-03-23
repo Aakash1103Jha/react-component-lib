@@ -21,8 +21,6 @@
 		"react",
 		"typescript"
 	],
-	"author": "Aakash Jha <thedevdesigner@gmail.com> (https://www.thedevdesigner.com/)",
-	"license": "MIT",
 	"devDependencies": {
 		"@rollup/plugin-commonjs": "^21.0.1",
 		"@rollup/plugin-node-resolve": "^13.1.3",
@@ -38,5 +36,15 @@
 	},
 	"peerDependencies": {
 		"react": "^17.0.2"
-	}
+	},
+	"author": "Aakash Jha <thedevdesigner@gmail.com> (https://www.thedevdesigner.com/)",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Aakash1103Jha/react-component-lib.git"
+	},
+	"bugs": {
+		"url": "https://github.com/Aakash1103Jha/react-component-lib/issues",
+		"email": "thedevdesigner@gmail.com"
+	},
+	"license": "MIT"
 }
