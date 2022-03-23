@@ -1,6 +1,5 @@
 import { MouseEventHandler } from "react"
-
-export type ButtonPropTypes = {
+export interface ButtonPropTypes {
 	label: string
 	size?: "lg" | "md" | "sm"
 	btnType?: "primary" | "secondary" | "ghost"
