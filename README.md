@@ -1,3 +1,5 @@
+[![Node CI](https://github.com/Aakash1103Jha/react-component-lib/actions/workflows/node-ci.yml/badge.svg?branch=master)](https://github.com/Aakash1103Jha/react-component-lib/actions/workflows/node-ci.yml)
+
 # React Component Library
 
 A collection of different UI components for React projects, written in TypeScript.
