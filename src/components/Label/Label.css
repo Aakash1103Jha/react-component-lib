@@ -1,0 +1,15 @@
+.label {
+	--text-color-dark: #000000;
+	--text-color-light: #ffffff;
+	--text-color-error: red;
+
+	font-size: calc(0.9rem + 0.3vmin);
+}
+.label.simple {
+}
+.label.error {
+	color: var(--text-color-error);
+}
+.label.dark {
+	color: var(--text-color-light);
+}
