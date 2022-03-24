@@ -1,4 +1,4 @@
-import { MouseEventHandler } from "react"
+import { MouseEventHandler, ReactElement, ReactNode, SVGProps } from "react"
 export interface ButtonPropTypes {
 	label: string
 	size?: "lg" | "md" | "sm"
@@ -9,4 +9,5 @@ export interface ButtonPropTypes {
 	styles?: object
 	type?: "button" | "submit" | "reset"
 	isDarkMode?: boolean
+	icon?: ReactElement
 }

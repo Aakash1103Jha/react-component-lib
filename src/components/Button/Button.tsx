@@ -1,4 +1,4 @@
-import React from "react"
+import React, { ReactElement } from "react"
 import { ButtonPropTypes } from "./ButtonPropTypes"
 
 import "./Button.css"
@@ -16,6 +16,7 @@ import "./Button.css"
  * @param {string} shape - - "default" | "rounded" | "pill"
  * @param {object} styles - inline styles to be applied
  * @param {boolean} isDarkMode - default `false`
+ * @param {ReactElement} icon - icon to be displayed along with the text
  * @returns Button
  */
 const Button: React.FC<ButtonPropTypes> = (props) => {
@@ -29,6 +30,7 @@ const Button: React.FC<ButtonPropTypes> = (props) => {
 		shape = "default",
 		styles,
 		isDarkMode = false,
+		icon,
 	} = props
 	return (
 		<button
@@ -38,6 +40,7 @@ const Button: React.FC<ButtonPropTypes> = (props) => {
 			} ${className}`}
 			style={styles}
 			onClick={onClick}>
+			{icon !== undefined && { icon }}
 			{label}
 		</button>
 	)
