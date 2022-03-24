@@ -1,0 +1,56 @@
+/* .stepper_btn,
+.svg, */
+.stepper_btn,
+.stepper_container,
+.step_val {
+	--bg-primary: #3479f6;
+	--bg-secondary: transparent;
+	--bg-ghost: #c2c2c2;
+	--border-primary: var(--bg-primary);
+	--border-secondary: var(--border-primary);
+	--text-color-primary: #000000;
+	--text-color-secondary: var(--bg-primary);
+	--text-color-ghost: var(--text-color-primary);
+	--shadow: 0px 2px 5px 2px rgb(50, 51, 48, 0.2);
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: none;
+	outline: none;
+	transition: 0.2s;
+}
+.stepper_container {
+	padding: 0.5rem 1rem;
+	border-radius: 0.3rem;
+	background: var(--bg-secondary);
+}
+.stepper_container.border {
+	border: 2px solid var(--bg-primary);
+}
+.stepper_btn {
+	height: 2rem;
+	width: 2rem;
+	border-radius: 0.3rem;
+	cursor: pointer;
+	background: var(--bg-primary);
+	color: var(--text-color-primary);
+}
+.svg {
+	margin: auto;
+	width: 100%;
+}
+.step_val {
+	min-width: 3rem;
+	color: var(--text-color-primary);
+}
+.stepper_container.dark {
+	--bg-secondary: rgb(50, 51, 48, 0.8);
+}
+.stepper_btn.dark {
+	--bg-primary: #323330;
+}
+.step_val.dark,
+.svg.dark {
+	--text-color-primary: #ffffff;
+}
