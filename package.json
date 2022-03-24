@@ -13,9 +13,8 @@
 	],
 	"private": false,
 	"scripts": {
-		"prebuild": "rm -rf dist",
 		"rollup-watch": "rollup -c -w",
-		"build": "npm run prebuild && rollup -c"
+		"build": "CI=false rollup -c"
 	},
 	"keywords": [
 		"react",
