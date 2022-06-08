@@ -5,6 +5,7 @@ module.exports = {
 		"@storybook/addon-essentials",
 		"@storybook/addon-interactions",
 		"@storybook/addon-postcss",
+		"storybook-css-modules",
 	],
 	framework: "@storybook/react",
 }
