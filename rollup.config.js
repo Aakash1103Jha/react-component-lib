@@ -5,6 +5,7 @@ import { terser } from "rollup-plugin-terser"
 import external from "rollup-plugin-peer-deps-external"
 import postcss from "rollup-plugin-postcss"
 import dts from "rollup-plugin-dts"
+import autoprefixer from "autoprefixer"
 
 const packageJson = require("./package.json")
 
@@ -29,8 +30,13 @@ export default [
 			resolve(),
 			commonjs(),
 			typescript({ tsconfig: "./tsconfig.json" }),
-			postcss(),
-			terser(),
+			postcss({
+				plugins: [autoprefixer()],
+				minimize: true,
+				sourceMap: true,
+				extract: "styles.css",
+			}),
+			terser({ compress: true }),
 		],
 	},
 	{
