@@ -15,7 +15,7 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 17
-      - run: npm ci
+      - run: npm install
 
   publish-gpr:
     needs: build
